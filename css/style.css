@@ -1,0 +1,43 @@
+/* Google Icon Font Setting */
+    /* Rules for sizing the icon. */
+    .material-icons.md-18 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    .material-icons.md-48 { font-size: 48px; }
+
+    /* Rules for using icons as black on a light background. */
+    .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+    /* Rules for using icons as white on a dark background. */
+    .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+body { font-family: "Microsoft JhengHei","微軟正黑體","PMingLiU","新細明體",sans-serif; }
+p { margin: 0;}
+#main { background-image: url(/images/6H.jpg); background-size: cover; }
+
+.cut { padding: 15px 0; text-align: center; }
+
+#name { background: #333; color: #fff; padding: 5px 10px; text-align: center; }
+#name > h1 { display: inline-block; font-size: 50px; margin: 0; }
+#name > h2 { display: inline-block; margin: 0; margin-left: 5px; }
+
+#myPhoto {
+    display: inline-block;
+    height: 200px; width: 200px;
+    background-image: url(/images/11428004_1107973842549572_4063956640055173230_n.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.75);
+    box-shadow: 0 1px 15px rgba(0,0,0,0.75);
+}
+
+
+
+.whiteBG { background: #fff; }
+#intro p { margin: 10px 0 0 0; font-size: 18px; line-height: 1.8; }
+#intro > ul { font-size: 18px; line-height: 1.8;text-align: center; list-style: none; padding: 0; }
+h3 { display: inline-block; background: #333; color: #fff; padding: 10px 40px; border-radius: 30px; margin: 0; }
