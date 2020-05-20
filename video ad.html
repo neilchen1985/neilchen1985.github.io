@@ -73,9 +73,6 @@
                 </div>
             </div>
             <script>
-
-                (function(){
-
                 var tag = window.top.document.createElement('script');
                 tag.src = 'https://www.youtube.com/iframe_api';
                 var firstScriptTag = window.top.document.getElementsByTagName('script')[0];
@@ -95,8 +92,6 @@
                         }
                     });
                     console.log('player new complete');
-                    
-
                     controllerPlay = window.top.document.querySelector('.videoAd_play');
                     controllerPause = window.top.document.querySelector('.videoAd_pause');
                     controllerSoundOn = window.top.document.querySelector('.videoAd_soundOn');
@@ -114,10 +109,6 @@
                         controllerSoundOff.style.display = 'none';
                         controllerSoundOn.style.display = 'inline-block';
                     });
-
-                    
-                    
-                    
                 }
                 function onPlayerReady(event) {
                     event.target.mute();
@@ -147,8 +138,6 @@
                             console.log('unHandle PlayerStateChange: ' + event.data);
                     }
                 }
-            // },100);
-            })();
             </script>
         </div>
 
@@ -167,7 +156,6 @@
             var videoAd_i4 = window.top.document.createElement('i');
             var videoAd_script = window.top.document.createElement('script');
             var adPlacement = this.frameElement.parentNode;
-
             videoAd_i1.classList.add("fa");
             videoAd_i1.classList.add("fa-play");
             videoAd_i2.classList.add("fa");
@@ -176,7 +164,6 @@
             videoAd_i3.classList.add("fa-volume-up");
             videoAd_i4.classList.add("fa");
             videoAd_i4.classList.add("fa-volume-off");
-
             videoAd_layout4.classList.add("videoAd_play");
             videoAd_layout4.style.display = "inline-block";
             videoAd_layout4.style.fontSize = "20px";
@@ -239,7 +226,7 @@
             videoAd_layout1.style.width = "100%";
             videoAd_layout1.style.position = "relative";
             videoAd_layout1.style.lineHeight = "0";
-            videoAd_script.innerHTML += " (function(){ var tag = window.top.document.createElement('script'); ";
+            videoAd_script.innerHTML += " var tag = window.top.document.createElement('script'); ";
             videoAd_script.innerHTML += " tag.src = 'https://www.youtube.com/iframe_api'; ";
             videoAd_script.innerHTML += " var firstScriptTag = window.top.document.getElementsByTagName('script')[0]; ";
             videoAd_script.innerHTML += " firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); ";
@@ -256,7 +243,6 @@
             videoAd_script.innerHTML += " events: { ";
             videoAd_script.innerHTML += " 'onReady': onPlayerReady, "
             videoAd_script.innerHTML += " 'onStateChange': onPlayerStateChange } }); ";
-
             videoAd_script.innerHTML += " controllerPlay = window.top.document.querySelector('.videoAd_play'); ";
             videoAd_script.innerHTML += " controllerPause = window.top.document.querySelector('.videoAd_pause'); ";
             videoAd_script.innerHTML += " controllerSoundOn = window.top.document.querySelector('.videoAd_soundOn'); ";
@@ -271,7 +257,6 @@
             videoAd_script.innerHTML += " player.unMute(); ";
             videoAd_script.innerHTML += " controllerSoundOff.style.display = 'none'; ";
             videoAd_script.innerHTML += " controllerSoundOn.style.display = 'inline-block'; });  } ";
-
             videoAd_script.innerHTML += " function onPlayerReady(event) { ";
             videoAd_script.innerHTML += " event.target.mute(); ";
             videoAd_script.innerHTML += " controllerSoundOff.style.display = 'inline-block'; ";
@@ -291,7 +276,7 @@
             videoAd_script.innerHTML += " case YT.PlayerState.ENDED: ";
             videoAd_script.innerHTML += " player.playVideo(); break; ";
             videoAd_script.innerHTML += " default: ";
-            videoAd_script.innerHTML += " console.log('unHandle PlayerStateChange: ' + event.data); } } })();";
+            videoAd_script.innerHTML += " console.log('unHandle PlayerStateChange: ' + event.data); } }";
             videoAd_layout4.appendChild(videoAd_i1);
             videoAd_layout5.appendChild(videoAd_i2);
             videoAd_layout6.appendChild(videoAd_i3);
@@ -305,6 +290,7 @@
             videoAd_layout1.appendChild(videoAd_layout3);
             adPlacement.appendChild(videoAd_layout1);
             adPlacement.appendChild(videoAd_script);
+            // code by Neil Chen @ 2020.05.20
         </script>
 
         <p>article content, article content, article content, article content, article content, article content, article
