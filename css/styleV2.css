@@ -1,20 +1,48 @@
 /* Google Icon Font Setting */
-    /* Rules for sizing the icon. */
-    .material-icons.md-18 { font-size: 18px; }
-    .material-icons.md-24 { font-size: 24px; }
-    .material-icons.md-36 { font-size: 36px; }
-    .material-icons.md-48 { font-size: 48px; }
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+    font-size: 18px;
+}
 
-    /* Rules for using icons as black on a light background. */
-    .material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-    .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+.material-icons.md-24 {
+    font-size: 24px;
+}
 
-    /* Rules for using icons as white on a dark background. */
-    .material-icons.md-light { color: rgba(255, 255, 255, 1); }
-    .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+.material-icons.md-36 {
+    font-size: 36px;
+}
 
-body { font-family: "Microsoft JhengHei","微軟正黑體","PMingLiU","新細明體",sans-serif; color: #fff; }
-p { margin: 0;}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+    font-family: "Microsoft JhengHei", "微軟正黑體", "PMingLiU", "新細明體", sans-serif;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+}
+
 .cover {
     background-image: url(../images/diagonal-left.png), url(../images/black20.png), url(../images/verge.jpg);
     background-color: transparent;
@@ -22,45 +50,108 @@ p { margin: 0;}
     background-repeat: repeat, repeat, no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    margin: 0 auto; width: 100%; max-width: initial;
+    margin: 0 auto;
+    width: 100%;
+    max-width: initial;
     padding: 100px 0;
 }
 
-.cut { padding: 15px 0; text-align: center; }
-.cut > h1 { display: inline-block; font-size: 50px; margin: 0; border-bottom: 2px solid #fff; font-weight: bolder; padding: 10px; }
-.cut > h1 > span { font-size: 0.7em; }
-.cut > h2 { font-size: 25px; }
+.cut {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.cut>h1 {
+    display: inline-block;
+    font-size: 50px;
+    margin: 0;
+    border-bottom: 2px solid #fff;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+.cut>h1>span {
+    font-size: 0.7em;
+}
+
+.cut>h2 {
+    font-size: 25px;
+}
 
 #myPhoto {
-    height: 200px; width: 200px;
+    height: 200px;
+    width: 200px;
     background-image: url(../images/1398928638108.jpg);
     background-size: cover;
     background-position: center center;
     border-radius: 50%;
-    -webkit-box-shadow: 0 1px 50px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0 1px 50px rgba(0,0,0,0.75);
-    box-shadow: 0 1px 50px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0 1px 50px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 50px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 50px rgba(0, 0, 0, 0.75);
     margin: auto;
 }
-.borderTop { border-top: 1px solid rgba(255,255,255,0.3); }
-.cut > .content { display: inline-block; position: relative; width: 90%; max-width: 1000px; background-color: rgba(0,0,0,0.5); padding: 30px 0;}
-.cut > .content > div > h3 { display: inline-block; padding: 0px 50px; font-size: 30px; line-height: 2; font-weight: bolder; background: rgba(255,255,255,0.1); }
+
+.borderTop {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cut>.content {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px 0;
+}
+
+.cut>.conten h3 {
+    display: inline-block;
+    padding: 0px 50px;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: bolder;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 /*.cut > .content ::after { display: inline-block; content: ""; width: 5px; height: 100%; position: absolute; left: 50%; top: 0; background: rgba(255,255,255,0.1); }*/
 
-.cut > .content > .experience, .cut > .content > .education { font-size: 20px; padding: 20px; }
-.cut > .content > .experience > .time, .cut > .content > .education > .time {  opacity: 0.7; }
-.cut > .content > .experience > .company, .cut > .content > .education > .school { font-size: 1.3em; font-weight: bold; }
-.cut > .content > .experience > .detail { font-size: 0.8em; margin-top: 10px; opacity: 0.9; text-align: left; }
-.cut > .content > .experience > .detail > ul { padding-left: 20px; line-height: 1.5; }
-.cut > .content > .education > .department, .cut > .content > .education > .graduate { font-size: 0.8em; }
+.cut .content .experience,
+.cut .content .education {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.cut .content .experience .time,
+.cut .content .education .time {
+    opacity: 0.7;
+}
+
+.cut .content .experience .company,
+.cut .content .education .school {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.cut .content .experience .detail {
+    font-size: 0.8em;
+    margin-top: 10px;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.cut .content .experience .detail ul {
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.cut .content .education .department,
+.cut .content .education .graduate {
+    font-size: 0.8em;
+}
 
 
-@media ( min-width: 768px ) {
-    
-}
-@media ( min-width: 992px ) {
-    
-}
-@media ( min-width: 1200px ) {
-    
-}
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
