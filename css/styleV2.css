@@ -9,7 +9,7 @@ p {
 
 .cover {
     background-image: url(../images/diagonal-left.png), url(../images/black20.png)/*, url(../images/verge.jpg)*/;
-    background-color: transparent;
+    background-color: /*transparent*/yellow;
     background-size: 5px, 5px/*, cover*/;
     background-repeat: repeat, repeat, no-repeat;
     background-position: center center;
