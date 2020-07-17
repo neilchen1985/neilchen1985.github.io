@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            padding: 0 10px;
+        }
+
+        div {
+            font-size: 14px;
+        }
+    </style>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <button onclick="console.log('button clicked')">BUTTON</button>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+
+        <div id="testAdPlace"></div>
+
+        <!-- <div style="width: 100vw; height: calc(100vh - 48px); min-height: 516px; position: relative; margin-left: calc(0px - ((100vw - 100%) / 2));">
+            <div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; clip: rect(0, auto, auto, 0); -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);">
+                <div style="position: fixed; left: 0; top: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);">
+                    <div style="position: relative; width: 100%; text-align: center; width: 320px; height: 480px;">
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/V9O4luKGObE?mute=1&autoplay=1&controls=0&rel=0&loop=1" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0;"></iframe>
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/V9O4luKGObE?mute=1&autoplay=1&controls=0&rel=0&loop=1" frameborder="0" allowfullscreen style="position: absolute; top: 50%; left: 0; transform:translateY(-50%);"></iframe>
+                        <iframe width="320" height="180" src="https://www.youtube.com/embed/V9O4luKGObE?mute=1&autoplay=1&controls=0&rel=0&loop=1" frameborder="0" allowfullscreen style="position: absolute; bottom: 0; left: 0;"></iframe>
+                        <img src="./images/640x1386.jpg" />
+                    </div>
+                    <a href="https://gvm.com.tw" target="_blank" style="display: inline-block; width:100%; height: 100%; position: absolute; top:0; left:0; z-index:9999;"></a>
+                </div>
+            </div>
+            <div
+                style="display: block; width: 100%; max-width: 100%; top: 0px; left: 0px; position: absolute; padding: 0px; margin: 0px; transform: translateZ(5px);">
+                <div
+                    style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); line-height: 18px; height: 18px; padding: 0px; background-color: #666; text-align: center; letter-spacing: 1px;">
+                    ADVERTISEMENT</div>
+            </div>
+            <div
+                style="display: block; width: 100%; max-width: 100%; bottom: 0px; left: 0px; position: absolute; padding: 0px; margin: 0px; transform: translateZ(5px);">
+                <div
+                    style="font-size: 10px; font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255); line-height: 18px; height: 18px; padding: 0px; background-color: #666; text-align: center; letter-spacing: 1px;">
+                    CONTINUE READING BELOW</div>
+            </div>
+        </div> -->
+
+
+        <script>
+            var underlayAd_layout1 = window.top.document.createElement("div");
+            var underlayAd_layout2 = window.top.document.createElement("div");
+            var underlayAd_layout3 = window.top.document.createElement("div");
+            var underlayAd_layout4 = window.top.document.createElement("div");
+            var underlayAd_layout5 = window.top.document.createElement("div");
+            var underlayAd_layout6 = window.top.document.createElement("div");
+            var underlayAd_layout7 = window.top.document.createElement("div");
+            var underlayAd_layout8 = window.top.document.createElement("div");
+            var underlayAd_iframe = window.top.document.createElement("iframe");
+            var underlayAd_img = window.top.document.createElement("img");
+            var underlayAd_a = window.top.document.createElement("a");
+            var underlayAd_target = document.getElementById("testAdPlace");
+            // var underlayAd_target = this.frameElement.parentNode;
+
+            var creativeWidth = 320, creativeHeight = 480;
+            // var creativeWidth = 640, creativeHeight = 1386;
+            var vw = window.top.innerWidth, vh = window.top.innerHeight;
+            var creativeWidthBigger = creativeWidth >= vw;
+            var creativeHeightBigger = vw * (creativeHeight / creativeWidth) >= (vh - 48);
+            var creativeDisplayWidth = creativeWidthBigger ? vw : creativeWidth;
+            var creativeHeightCalc = creativeWidthBigger ? vw * (creativeHeight / creativeWidth) : creativeHeight
+            var creativeDisplayHeight = creativeHeightBigger ? vh - 48 : creativeHeightCalc;
+            var hasVideo = false;
+            var videoPosition = "middle";
+            // this.frameElement.style.display = "none";
+            underlayAd_target.parentNode.style.height = "auto";
+
+            if (hasVideo){
+                underlayAd_iframe.width = creativeDisplayWidth.toString();
+                underlayAd_iframe.height = (creativeDisplayWidth / 16 * 9).toString();
+                underlayAd_iframe.src="https://www.youtube.com/embed/" + "V9O4luKGObE" + "?mute=1&autoplay=1&controls=0&rel=0&loop=1";
+                // underlayAd_iframe.frameborder = "0";
+                underlayAd_iframe.allowfullscreen = "";
+                underlayAd_iframe.style.position = "absolute";
+                underlayAd_iframe.style.left = "0";
+                underlayAd_iframe.style.border = "0";
+                switch (videoPosition) {
+                    case "top":
+                        underlayAd_iframe.style.top = "0";
+                        break;
+                    case "middle":
+                        underlayAd_iframe.style.top = "50%";
+                        underlayAd_iframe.style.transform = creativeHeightBigger ? "translateY(calc(-50% - 42px))" : "translateY(-50%)";
+                        break;
+                    case "bottom":
+                        underlayAd_iframe.style.bottom = creativeHeightBigger ? "36px" : "0";
+                        break;
+                }
+            }
+            
+            underlayAd_img.src = "./images/320x480.jpeg";
+            // underlayAd_img.src = "./images/640x1386.jpeg";
+            underlayAd_img.style.width = creativeDisplayWidth + "px";
+            underlayAd_img.style.position = "relative";
+            underlayAd_img.style.top = creativeHeightBigger ? "calc(50% - 42px)" : "50%";
+            underlayAd_img.style.transform = "translateY(-50%)";
+            
+            underlayAd_layout4.style.position = "relative";
+            underlayAd_layout4.style.width = creativeDisplayWidth + "px";
+            underlayAd_layout4.style.height = creativeDisplayHeight + "px";
+            underlayAd_layout4.style.textAlign = "center";
+            // hasVideo ? underlayAd_layout4.style.overflow = "hidden": false ;
+            creativeHeightBigger ? underlayAd_layout4.style.top = "42px" : false ;
+            
+
+            underlayAd_a.target = "_blank";
+            underlayAd_a.href = "";
+            underlayAd_a.style.display = "inline-block";
+            underlayAd_a.style.width = "100%";
+            underlayAd_a.style.height = "100%";
+            underlayAd_a.style.position = "absolute";
+            underlayAd_a.style.top = "0";
+            underlayAd_a.style.left = "0";
+            underlayAd_a.style.zIndex = "9999";
+
+            underlayAd_layout3.style.position = "fixed";
+            underlayAd_layout3.style.left = "0";
+            underlayAd_layout3.style.top = "0";
+            underlayAd_layout3.style.width = "100%";
+            underlayAd_layout3.style.height = "100%";
+            underlayAd_layout3.style.display = "flex";
+            underlayAd_layout3.style.alignItems = "center";
+            underlayAd_layout3.style.justifyContent = "center";
+            underlayAd_layout3.style.webkitTransform = "translate3d(0, 0, 0)";
+            underlayAd_layout3.style.transform = "translate3d(0, 0, 0)";
+
+            underlayAd_layout2.style.position = "absolute";
+            underlayAd_layout2.style.left = "0";
+            underlayAd_layout2.style.top = "0";
+            underlayAd_layout2.style.width = "100%";
+            underlayAd_layout2.style.height = "100%";
+            underlayAd_layout2.style.clip = "rect(0, auto, auto, 0)";
+            underlayAd_layout2.style.webkitClipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+            underlayAd_layout2.style.clipPath = "polygon(0 0, 100% 0, 100% 100%, 0 100%)";
+
+            underlayAd_layout1.style.width = "100vw";
+            underlayAd_layout1.style.height = "calc(100vh - 48px)";
+            underlayAd_layout1.style.minHeight = "516px";
+            underlayAd_layout1.style.position = "relative";
+            underlayAd_layout1.style.marginLeft = "calc(0px - ((100vw - 100%) / 2))";
+            underlayAd_layout1.style.marginBottom = "10px";
+
+            underlayAd_layout5.style.display = "block";
+            underlayAd_layout5.style.width = "100%";
+            underlayAd_layout5.style.maxWidth = "100%";
+            underlayAd_layout5.style.top = "0px";
+            underlayAd_layout5.style.left = "0px";
+            underlayAd_layout5.style.position = "absolute";
+            underlayAd_layout5.style.padding = "0px";
+            underlayAd_layout5.style.margin = "0px";
+            underlayAd_layout5.style.transform = "translateZ(5px)";
+
+            underlayAd_layout6.innerText = "ADVERTISEMENT";
+            underlayAd_layout6.style.fontSize = "10px"
+            underlayAd_layout6.style.fontFamily = "Arial, Helvetica, sans-serif";
+            underlayAd_layout6.style.color = "rgb(255, 255, 255)";
+            underlayAd_layout6.style.lineHeight = "18px";
+            underlayAd_layout6.style.height = "18px";
+            underlayAd_layout6.style.padding = "0px";
+            underlayAd_layout6.style.backgroundColor = "#666";
+            underlayAd_layout6.style.textAlign = "center";
+            underlayAd_layout6.style.letterSpacing = "1px";
+
+            underlayAd_layout7.style.display = "block";
+            underlayAd_layout7.style.width = "100%";
+            underlayAd_layout7.style.maxWidth = "100%";
+            underlayAd_layout7.style.bottom = "0px";
+            underlayAd_layout7.style.left = "0px";
+            underlayAd_layout7.style.position = "absolute";
+            underlayAd_layout7.style.padding = "0px";
+            underlayAd_layout7.style.margin = "0px";
+            underlayAd_layout7.style.transform = "translateZ(5px)";
+
+            underlayAd_layout8.innerText = "CONTINUE READING BELOW";
+            underlayAd_layout8.style.fontSize = "10px";
+            underlayAd_layout8.style.fontFamily = "Arial, Helvetica, sans-serif";
+            underlayAd_layout8.style.color = "rgb(255, 255, 255)";
+            underlayAd_layout8.style.lineHeight = "18px";
+            underlayAd_layout8.style.height = "18px";
+            underlayAd_layout8.style.padding = "0px";
+            underlayAd_layout8.style.backgroundColor = "#666";
+            underlayAd_layout8.style.textAlign = "center";
+            underlayAd_layout8.style.letterSpacing = "1px";
+
+            underlayAd_layout7.appendChild(underlayAd_layout8);
+            underlayAd_layout5.appendChild(underlayAd_layout6);
+            
+            underlayAd_iframe.src != "" ? underlayAd_layout4.appendChild(underlayAd_iframe) : false ;
+            underlayAd_layout4.appendChild(underlayAd_img);
+
+            underlayAd_layout3.appendChild(underlayAd_layout4);
+            underlayAd_layout3.appendChild(underlayAd_a);
+
+            underlayAd_layout2.appendChild(underlayAd_layout3);
+
+            underlayAd_layout1.appendChild(underlayAd_layout2);
+            underlayAd_layout1.appendChild(underlayAd_layout5);
+            underlayAd_layout1.appendChild(underlayAd_layout7);
+            underlayAd_target.appendChild(underlayAd_layout1);
+        </script>
+
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+        <p>article content, article content, article content, article content, article content, article content, article
+            content, article content, article content, article content, </p>
+
+
+    </div>
+</body>
