@@ -109,29 +109,6 @@
             // this.frameElement.style.display = "none";
             underlayAd_target.parentNode.style.height = "auto";
 
-<<<<<<< HEAD
-            if (hasVideo){
-                underlayAd_iframe.width = creativeDisplayWidth.toString();
-                underlayAd_iframe.height = (creativeDisplayWidth / 16 * 9).toString();
-                underlayAd_iframe.src="https://www.youtube.com/embed/" + "V9O4luKGObE" + "?mute=1&autoplay=1&controls=0&rel=0&loop=1";
-                // underlayAd_iframe.frameborder = "0";
-                underlayAd_iframe.allowfullscreen = "";
-                underlayAd_iframe.style.position = "absolute";
-                underlayAd_iframe.style.left = "0";
-                underlayAd_iframe.style.border = "0";
-                switch (videoPosition) {
-                    case "top":
-                        underlayAd_iframe.style.top = "0";
-                        break;
-                    case "middle":
-                        underlayAd_iframe.style.top = "50%";
-                        underlayAd_iframe.style.transform = creativeHeightBigger ? "translateY(calc(-50% - 42px))" : "translateY(-50%)";
-                        break;
-                    case "bottom":
-                        underlayAd_iframe.style.bottom = creativeHeightBigger ? "36px" : "0";
-                        break;
-                }
-=======
             underlayAd_iframe.width = creativeDisplayWidth.toString();
             underlayAd_iframe.height = (creativeDisplayWidth / 16 * 9).toString();
             underlayAd_iframe.src="https://www.youtube.com/embed/" + "V9O4luKGObE" + "?mute=1&autoplay=1&controls=0&rel=0&loop=1";
@@ -151,7 +128,6 @@
                 case "bottom":
                     underlayAd_iframe.style.bottom = creativeHeightBigger ? "36px" : "0";
                     break;
->>>>>>> feature
             }
             
             underlayAd_img.src = "./images/320x480.jpeg";
@@ -251,11 +227,7 @@
             underlayAd_layout7.appendChild(underlayAd_layout8);
             underlayAd_layout5.appendChild(underlayAd_layout6);
             
-<<<<<<< HEAD
-            underlayAd_iframe.src != "" ? underlayAd_layout4.appendChild(underlayAd_iframe) : false ;
-=======
             underlayAd_layout4.appendChild(underlayAd_iframe);
->>>>>>> feature
             underlayAd_layout4.appendChild(underlayAd_img);
 
             underlayAd_layout3.appendChild(underlayAd_layout4);
