@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+body{
+  background-color: #FFFAF5;
+}
+
+.head_section{
+  background-image: url(image/bg.png);
+  width: 100vw;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+}
+
+div {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  display: inline-block;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+.head_section .logo {
+  margin-top: 30px;
+  position: relative;
+}
+
+.head_section .logo .gvm_logo{
+  width: 135px;
+}
+
+.head_section .logo .date {
+  width: 45px;
+  position: absolute;
+  bottom: 5px;
+  left: calc(50vw + 135px / 2 + 5px);
+}
+
+.head_section .title {
+  text-align: center;
+  margin: 5px 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.head_section .campaign_logo img{
+  width: 100%;
+  margin-top: -20px;
+}
+
+.head_section .pointer {
+  position: relative;
+  z-index: 1;
+}
+
+.head_section .pointer img{
+  width: 60px;
+  margin-top: -20px;
+}
+
+.head_section .rotate img{
+  width: 300px;
+  margin-top: -30px;
+}
+
+.head_section .trigger {
+  margin-top: 16px;
+}
+
+.head_section .trigger button {
+  background-color: #EB2E00;
+  font-size: 24px;
+  color: #fff;
+  width: 168px; height: 74px;
+  padding-left: 12px;
+}
+
+.head_section .text {
+  margin-top: 16px;
+  color: #EB2E00;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.award_section img {
+  width: 310px;
+}
+
+.award_section button {
+  margin-top: 10px;
+}
+
+.award_list {
+  margin-top: 40px;
+}
+
+.award_list img {
+  width: 100%;
+}
+
+.award_description {
+  margin-top: 0px;
+}
+
+.award_description p {
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 80%;
+  display: inline-block;
+}
+.award_description .b {
+  font-size: 16px;
+}
+
+.note {
+  margin-top: 40px;
+}
+.note .title {
+  font-size: 34px;
+  font-weight: bolder;
+}

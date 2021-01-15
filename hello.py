@@ -1,8 +1,5 @@
-x = 0
+def square(x):
+  return x * x
 
-if x > 0:
-  print("x is positive")
-elif x < 0:
-  print("x is negative")
-else:
-  print("x is zero")
+for i in range(10):
+  print("{} squared is {}".format(i, square(i)))
