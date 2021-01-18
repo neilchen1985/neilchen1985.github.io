@@ -10,7 +10,8 @@ var triggerBtn = document.querySelector(".head_section .trigger button");
 var showAward = function(){
   var scrollComplete = function(){
     setTimeout(function(){
-      $(awardImg).effect('shake', 300);
+      // $(awardImg).effect('shake', 300);
+      $(awardImg).show('puff');
     },1000);
   };
   var awardImg = $('.award_section > img')[0];
@@ -19,6 +20,9 @@ var showAward = function(){
     scrollTop: $(".award_section").offset().top - 20
   }, 1000, scrollComplete());
   $('.award_section > button img')[0].src = exchange ? 'image/exchange_2.png' : 'image/exchange_1.png';
+  setTimeout(function(){
+    $('.award_section > button img').show();
+  },1000);
 };
 
 var rotateFn = function (awards, angles, txt){
@@ -26,7 +30,7 @@ var rotateFn = function (awards, angles, txt){
   $(rotateEle).stopRotate();
   $(rotateEle).rotate({
     angle:0,
-    animateTo:angles + 720,
+    animateTo:angles + 1800,
     duration:3000,
     callback:function (){
       console.log(txt);
@@ -45,12 +49,22 @@ var triggerBtnDetect = function(){
     triggerBtn.style.backgroundColor = played ? '#999999' : '#EB2E00';
 };
 $('.award_section > button').click(function(){
-  exchange = true;
-  $('.award_section > button img')[0].src = exchange ? 'image/exchange_2.png' : 'image/exchange_1.png';
-  // 送紀錄
+  if(exchange){
+    $('.award_section > button').effect('shake', 300);
+  }else{
+    exchange = true;
+    $('.award_section > button img')[0].src = exchange ? 'image/exchange_2.png' : 'image/exchange_1.png';
+    // 送紀錄
+  }
 });
 triggerBtn.addEventListener('click', function(){
-  if(rotating) return;
+  if(rotating){
+    return;
+  }else if(played){
+    triggerBtnDetect();
+    $(triggerBtn).effect('shake', 300);
+    return;
+  }
   var fate = Math.floor(Math.random()*(6-0+1)+0);
   // 0 => 特獎, 1 => 二獎, 2 => 三獎, 3 => 四獎, 4 => 知識獎, 5 => 銘謝惠顧
   switch(fate){

@@ -145,6 +145,7 @@ button {
 
 .award_section img {
   width: 310px;
+  display: none;
 }
 
 .award_section button {
