@@ -20,9 +20,13 @@ var showAward = function(){
     scrollTop: $(".award_section").offset().top - 20
   }, 1000, scrollComplete());
   $('.award_section > button img')[0].src = exchange ? 'image/exchange_2.png' : 'image/exchange_1.png';
-  setTimeout(function(){
-    $('.award_section > button img').show();
-  },1000);
+  if(award == 'awards_6.png'){
+    return
+  }else{
+    setTimeout(function(){
+      $('.award_section > button img').show();
+    },1000);
+  }
 };
 
 var rotateFn = function (awards, angles, txt){
@@ -66,7 +70,8 @@ triggerBtn.addEventListener('click', function(){
     return;
   }
   var fate = Math.floor(Math.random()*(6-0+1)+0);
-  // 0 => 特獎, 1 => 二獎, 2 => 三獎, 3 => 四獎, 4 => 知識獎, 5 => 銘謝惠顧
+  // var fate = 5;
+  // 0 => 特獎, 1 => 二獎, 2 => 三獎, 3 => 四獎, 4 => 知識獎, 5 => 加倍券
   switch(fate){
     case 0:
       rotateFn(0, 0, '特獎');
@@ -89,7 +94,7 @@ triggerBtn.addEventListener('click', function(){
       award = 'awards_5.png';
       break;
     case 5:
-      rotateFn(5, -300, '銘謝惠顧');
+      rotateFn(5, -300, '加倍卷');
       award = 'awards_6.png';
       break;
   }

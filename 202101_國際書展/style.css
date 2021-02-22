@@ -17,6 +17,7 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 html {
@@ -56,6 +57,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 body{
   background-color: #FFFAF5;
+}
+
+p {
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: left;
+  word-break: break-all;
+  word-wrap: break-word;
+  width: 80%;
+  display: inline-block;
+  color: #666;
+}
+
+.strong {
+  font-weight: bolder;
+  color: #000;
+}
+
+.text_red {
+  color: #EB2E00;
 }
 
 .head_section{
@@ -119,9 +140,22 @@ button {
   margin-top: -20px;
 }
 
-.head_section .rotate img{
-  width: 300px;
+.head_section .rotate {
   margin-top: -30px;
+  position: relative;
+  width: 300px;
+  margin: -30px auto 0 auto;
+}
+
+.head_section .rotate img.plate{
+  width: 300px;
+}
+
+.head_section .rotate img.curve{
+  width: 120px;
+  position: absolute;
+  top: -10px;
+  right: 0;
 }
 
 .head_section .trigger {
@@ -132,7 +166,7 @@ button {
   background-color: #EB2E00;
   font-size: 24px;
   color: #fff;
-  width: 168px; height: 74px;
+  width: 200px; height: 74px;
   padding-left: 12px;
 }
 
@@ -152,6 +186,18 @@ button {
   margin-top: 10px;
 }
 
+.share_section button, .share_section a {
+  display: inline-block;
+  padding: 0;
+}
+
+.share_section img {
+  margin-top: 10px;
+  width: 48vw;
+  max-width: 150px;
+  padding: 0 10px;
+}
+
 .award_list {
   margin-top: 40px;
 }
@@ -160,27 +206,41 @@ button {
   width: 100%;
 }
 
+.award_list img:nth-child(5){
+  margin-top: -40px;
+}
+
 .award_description {
   margin-top: 0px;
 }
 
-.award_description p {
-  font-size: 12px;
-  line-height: 1.5em;
-  text-align: left;
-  word-break: break-all;
-  word-wrap: break-word;
-  width: 80%;
-  display: inline-block;
-}
-.award_description .b {
+.award_description .title {
   font-size: 16px;
+  color: #000;
 }
 
 .note {
   margin-top: 40px;
 }
+
 .note .title {
   font-size: 34px;
   font-weight: bolder;
+  width: 300px;
+  padding: 10px 0;
+  text-align: center;
+  border: 1px solid #EB2E00;
+  color: #EB2E00;
+  display: inline-block;
+  margin: 0 auto 10px auto;
+}
+
+.footer {
+  background-color: #2753AC;
+  color: #A3B3D5;
+  padding: 30px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 10px;
+  line-height: 1.5;
 }
