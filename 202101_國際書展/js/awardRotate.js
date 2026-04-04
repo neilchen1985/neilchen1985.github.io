@@ -81,7 +81,7 @@ Wilq32.PhotoEffect=(function(){
 			} else {
 				var self=this;
 				// TODO: Remove jQuery dependency
-				jQuery(this._img).bind("load", function()
+				jQuery(this._img).on("load", function()
 				{
 					self._Loader(parameters);
 				});
@@ -121,13 +121,13 @@ Wilq32.PhotoEffect.prototype={
                 var oldEvents = this._parameters.bind;
                 for (var a in oldEvents) if (oldEvents.hasOwnProperty(a)) 
                         // TODO: Remove jQuery dependency
-                        jQuery(this._eventObj).unbind(a,oldEvents[a]);
+                        jQuery(this._eventObj).off(a,oldEvents[a]);
             }
 
             this._parameters.bind = events;
 			for (var a in events) if (events.hasOwnProperty(a)) 
 				// TODO: Remove jQuery dependency
-					jQuery(this._eventObj).bind(a,events[a]);
+					jQuery(this._eventObj).on(a,events[a]);
 		}
 	},
 
